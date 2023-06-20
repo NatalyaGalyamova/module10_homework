@@ -37,14 +37,15 @@ let result = arr.map((item) => console.log(item));
 
 // Задание 6
 let arr = [9, 4, 26, 31, 2];
+let isIdentical = true;
 
 for (let i=1; i < arr.length; i++) {
-  if (arr[i] === arr[0]) {
-    console.log(true)
-  } else {
-    console.log(false)
-  }
+  if (arr[i] !== arr[0]) {
+    isIdentical = false;
+    break;
+  } 
 }
+console.log(isIdentical);
 
 // Задание 7 
 let arr = [3, 5, 72, 94, 15, 4, null, 0, 0, 'string', true];
